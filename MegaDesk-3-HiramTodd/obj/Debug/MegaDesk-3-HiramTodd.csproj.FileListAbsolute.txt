@@ -1,0 +1,14 @@
+C:\Users\Hiram Todd\source\repos\hello-world\Week03\MegaDesk-3-HiramTodd\MegaDesk-3-HiramTodd\bin\Debug\MegaDesk-3-HiramTodd.exe.config
+C:\Users\Hiram Todd\source\repos\hello-world\Week03\MegaDesk-3-HiramTodd\MegaDesk-3-HiramTodd\bin\Debug\MegaDesk-3-HiramTodd.exe
+C:\Users\Hiram Todd\source\repos\hello-world\Week03\MegaDesk-3-HiramTodd\MegaDesk-3-HiramTodd\bin\Debug\MegaDesk-3-HiramTodd.pdb
+C:\Users\Hiram Todd\source\repos\hello-world\Week03\MegaDesk-3-HiramTodd\MegaDesk-3-HiramTodd\obj\Debug\MegaDesk-3-HiramTodd.csprojAssemblyReference.cache
+C:\Users\Hiram Todd\source\repos\hello-world\Week03\MegaDesk-3-HiramTodd\MegaDesk-3-HiramTodd\obj\Debug\MegaDesk_3_HiramTodd.AddQuote.resources
+C:\Users\Hiram Todd\source\repos\hello-world\Week03\MegaDesk-3-HiramTodd\MegaDesk-3-HiramTodd\obj\Debug\MegaDesk_3_HiramTodd.DisplayQuote.resources
+C:\Users\Hiram Todd\source\repos\hello-world\Week03\MegaDesk-3-HiramTodd\MegaDesk-3-HiramTodd\obj\Debug\MegaDesk_3_HiramTodd.MainMenu.resources
+C:\Users\Hiram Todd\source\repos\hello-world\Week03\MegaDesk-3-HiramTodd\MegaDesk-3-HiramTodd\obj\Debug\MegaDesk_3_HiramTodd.Properties.Resources.resources
+C:\Users\Hiram Todd\source\repos\hello-world\Week03\MegaDesk-3-HiramTodd\MegaDesk-3-HiramTodd\obj\Debug\MegaDesk_3_HiramTodd.SearchQuotes.resources
+C:\Users\Hiram Todd\source\repos\hello-world\Week03\MegaDesk-3-HiramTodd\MegaDesk-3-HiramTodd\obj\Debug\MegaDesk_3_HiramTodd.ViewAllQuotes.resources
+C:\Users\Hiram Todd\source\repos\hello-world\Week03\MegaDesk-3-HiramTodd\MegaDesk-3-HiramTodd\obj\Debug\MegaDesk-3-HiramTodd.csproj.GenerateResource.cache
+C:\Users\Hiram Todd\source\repos\hello-world\Week03\MegaDesk-3-HiramTodd\MegaDesk-3-HiramTodd\obj\Debug\MegaDesk-3-HiramTodd.csproj.CoreCompileInputs.cache
+C:\Users\Hiram Todd\source\repos\hello-world\Week03\MegaDesk-3-HiramTodd\MegaDesk-3-HiramTodd\obj\Debug\MegaDesk-3-HiramTodd.exe
+C:\Users\Hiram Todd\source\repos\hello-world\Week03\MegaDesk-3-HiramTodd\MegaDesk-3-HiramTodd\obj\Debug\MegaDesk-3-HiramTodd.pdb
