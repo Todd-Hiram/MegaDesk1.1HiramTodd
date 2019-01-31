@@ -43,6 +43,11 @@
 			this.numOfDrawers = new System.Windows.Forms.NumericUpDown();
 			this.rushOcomboBox = new System.Windows.Forms.ComboBox();
 			this.submitButton = new System.Windows.Forms.Button();
+			this.widthLabel = new System.Windows.Forms.Label();
+			this.depthLabel = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.widthComboBox = new System.Windows.Forms.ComboBox();
+			this.depthComboBox = new System.Windows.Forms.ComboBox();
 			((System.ComponentModel.ISupportInitialize)(this.numOfDrawers)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -78,17 +83,17 @@
 			// deskLabel
 			// 
 			this.deskLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.deskLabel.Location = new System.Drawing.Point(12, 65);
+			this.deskLabel.Location = new System.Drawing.Point(146, 80);
 			this.deskLabel.Name = "deskLabel";
-			this.deskLabel.Size = new System.Drawing.Size(150, 29);
+			this.deskLabel.Size = new System.Drawing.Size(180, 29);
 			this.deskLabel.TabIndex = 3;
-			this.deskLabel.Text = "Desk";
+			this.deskLabel.Text = "Desk Dimensions";
 			this.deskLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// DateQuoteLabel
 			// 
 			this.DateQuoteLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.DateQuoteLabel.Location = new System.Drawing.Point(12, 120);
+			this.DateQuoteLabel.Location = new System.Drawing.Point(142, 219);
 			this.DateQuoteLabel.Name = "DateQuoteLabel";
 			this.DateQuoteLabel.Size = new System.Drawing.Size(150, 30);
 			this.DateQuoteLabel.TabIndex = 5;
@@ -98,7 +103,7 @@
 			// 
 			// dateTimePicker
 			// 
-			this.dateTimePicker.Location = new System.Drawing.Point(12, 154);
+			this.dateTimePicker.Location = new System.Drawing.Point(142, 253);
 			this.dateTimePicker.Name = "dateTimePicker";
 			this.dateTimePicker.Size = new System.Drawing.Size(200, 20);
 			this.dateTimePicker.TabIndex = 6;
@@ -107,7 +112,7 @@
 			// rushOrderLabel
 			// 
 			this.rushOrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.rushOrderLabel.Location = new System.Drawing.Point(12, 177);
+			this.rushOrderLabel.Location = new System.Drawing.Point(142, 291);
 			this.rushOrderLabel.Name = "rushOrderLabel";
 			this.rushOrderLabel.Size = new System.Drawing.Size(150, 30);
 			this.rushOrderLabel.TabIndex = 7;
@@ -118,7 +123,7 @@
 			// rushOCheckBoxYes
 			// 
 			this.rushOCheckBoxYes.AutoSize = true;
-			this.rushOCheckBoxYes.Location = new System.Drawing.Point(16, 210);
+			this.rushOCheckBoxYes.Location = new System.Drawing.Point(146, 324);
 			this.rushOCheckBoxYes.Name = "rushOCheckBoxYes";
 			this.rushOCheckBoxYes.Size = new System.Drawing.Size(44, 17);
 			this.rushOCheckBoxYes.TabIndex = 8;
@@ -128,7 +133,7 @@
 			// rushOCheckBoxNo
 			// 
 			this.rushOCheckBoxNo.AutoSize = true;
-			this.rushOCheckBoxNo.Location = new System.Drawing.Point(16, 233);
+			this.rushOCheckBoxNo.Location = new System.Drawing.Point(146, 347);
 			this.rushOCheckBoxNo.Name = "rushOCheckBoxNo";
 			this.rushOCheckBoxNo.Size = new System.Drawing.Size(40, 17);
 			this.rushOCheckBoxNo.TabIndex = 9;
@@ -138,7 +143,7 @@
 			// rushDateLabel
 			// 
 			this.rushDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.rushDateLabel.Location = new System.Drawing.Point(12, 253);
+			this.rushDateLabel.Location = new System.Drawing.Point(497, 219);
 			this.rushDateLabel.Name = "rushDateLabel";
 			this.rushDateLabel.Size = new System.Drawing.Size(200, 30);
 			this.rushDateLabel.TabIndex = 10;
@@ -149,7 +154,7 @@
 			// drawerLabel
 			// 
 			this.drawerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.drawerLabel.Location = new System.Drawing.Point(12, 309);
+			this.drawerLabel.Location = new System.Drawing.Point(497, 291);
 			this.drawerLabel.Name = "drawerLabel";
 			this.drawerLabel.Size = new System.Drawing.Size(200, 30);
 			this.drawerLabel.TabIndex = 12;
@@ -165,14 +170,14 @@
             "Rosewood",
             "Veneer",
             "Pine"});
-			this.deskComboBox.Location = new System.Drawing.Point(12, 96);
+			this.deskComboBox.Location = new System.Drawing.Point(302, 112);
 			this.deskComboBox.Name = "deskComboBox";
 			this.deskComboBox.Size = new System.Drawing.Size(121, 21);
 			this.deskComboBox.TabIndex = 14;
 			// 
 			// numOfDrawers
 			// 
-			this.numOfDrawers.Location = new System.Drawing.Point(12, 343);
+			this.numOfDrawers.Location = new System.Drawing.Point(501, 324);
 			this.numOfDrawers.Maximum = new decimal(new int[] {
             7,
             0,
@@ -189,7 +194,7 @@
             "3 Days",
             "5 Days",
             "7 Days"});
-			this.rushOcomboBox.Location = new System.Drawing.Point(12, 286);
+			this.rushOcomboBox.Location = new System.Drawing.Point(501, 252);
 			this.rushOcomboBox.Name = "rushOcomboBox";
 			this.rushOcomboBox.Size = new System.Drawing.Size(121, 21);
 			this.rushOcomboBox.TabIndex = 17;
@@ -206,11 +211,75 @@
 			this.submitButton.UseVisualStyleBackColor = true;
 			this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
 			// 
+			// widthLabel
+			// 
+			this.widthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.widthLabel.Location = new System.Drawing.Point(146, 137);
+			this.widthLabel.Name = "widthLabel";
+			this.widthLabel.Size = new System.Drawing.Size(65, 29);
+			this.widthLabel.TabIndex = 19;
+			this.widthLabel.Text = "Width:";
+			this.widthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// depthLabel
+			// 
+			this.depthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.depthLabel.Location = new System.Drawing.Point(146, 166);
+			this.depthLabel.Name = "depthLabel";
+			this.depthLabel.Size = new System.Drawing.Size(65, 29);
+			this.depthLabel.TabIndex = 20;
+			this.depthLabel.Text = "Depth:";
+			this.depthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// label1
+			// 
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(146, 108);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(150, 29);
+			this.label1.TabIndex = 21;
+			this.label1.Text = "Surface Material:";
+			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// widthComboBox
+			// 
+			this.widthComboBox.FormattingEnabled = true;
+			this.widthComboBox.Items.AddRange(new object[] {
+            "24\"",
+            "36\"",
+            "48\"",
+            "60\"",
+            "72\"",
+            "84\"",
+            "96\""});
+			this.widthComboBox.Location = new System.Drawing.Point(217, 144);
+			this.widthComboBox.Name = "widthComboBox";
+			this.widthComboBox.Size = new System.Drawing.Size(121, 21);
+			this.widthComboBox.TabIndex = 22;
+			// 
+			// depthComboBox
+			// 
+			this.depthComboBox.FormattingEnabled = true;
+			this.depthComboBox.Items.AddRange(new object[] {
+            "12\"",
+            "24\"",
+            "36\"",
+            "48\""});
+			this.depthComboBox.Location = new System.Drawing.Point(217, 171);
+			this.depthComboBox.Name = "depthComboBox";
+			this.depthComboBox.Size = new System.Drawing.Size(121, 21);
+			this.depthComboBox.TabIndex = 23;
+			// 
 			// AddQuote
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.depthComboBox);
+			this.Controls.Add(this.widthComboBox);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.depthLabel);
+			this.Controls.Add(this.widthLabel);
 			this.Controls.Add(this.submitButton);
 			this.Controls.Add(this.rushOcomboBox);
 			this.Controls.Add(this.numOfDrawers);
@@ -252,5 +321,10 @@
 		private System.Windows.Forms.NumericUpDown numOfDrawers;
 		private System.Windows.Forms.ComboBox rushOcomboBox;
 		private System.Windows.Forms.Button submitButton;
+		private System.Windows.Forms.Label widthLabel;
+		private System.Windows.Forms.Label depthLabel;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.ComboBox widthComboBox;
+		private System.Windows.Forms.ComboBox depthComboBox;
 	}
 }
