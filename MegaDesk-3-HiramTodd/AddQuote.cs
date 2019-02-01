@@ -20,7 +20,7 @@ namespace MegaDesk_3_HiramTodd
 		private int NumDrawers = 0;
 		private int RushDays = 0;
 		private int TotalQuote;
-		Desk.Material Material;
+		Desk.Material Materials;
 		#endregion
 
 		public AddQuote()
