@@ -26,4 +26,12 @@ namespace MegaDesk_3_HiramTodd
 		public int Area { get; set; }
 		#endregion
 	}
+
+	//public int SurfaceArea
+	//{
+	//	get
+	//	{
+	//		return this.Width * this.Depth;
+	//	}
+	//}
 }

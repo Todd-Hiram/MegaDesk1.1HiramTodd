@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,20 +15,21 @@ namespace MegaDesk_3_HiramTodd
 	{
 		#region
 		public string CustomerName = String.Empty;
-		Desk.Material Material;
 		private int DeskWidth = 0;
 		private int DeskDepth = 0;
 		private int NumDrawers = 0;
 		private int RushDays = 0;
 		private int TotalQuote;
+		Desk.Material Material;
 		#endregion
 
-/*************************************** Control Validating ***************************************************************************/
-		
-/*************************************************************************************************************************/
 		public AddQuote()
 		{
 			InitializeComponent();
+			textLabelRemoval();
+
+			List<Desk.Material> Materials = Enum.GetValues(typeof(Desk.Material)).Cast<Desk.Material>().ToList();
+			desktopMaterialComboBox.DataSource = Materials;
 		}
 
 		private void AddQuote_Load(object sender, EventArgs e)
@@ -73,6 +75,33 @@ namespace MegaDesk_3_HiramTodd
 		}
 
 		private void submitButton_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		// These are the rush order days radio buttons
+		private void rushRadioButtonNull_CheckedChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void rushRadioButton3_CheckedChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void rushRadioButton5_CheckedChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void rushRadioButton7_CheckedChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		// The radio button for selecting the Rush Order option
+		private void radioButtonYes_CheckedChanged(object sender, EventArgs e)
 		{
 
 		}
