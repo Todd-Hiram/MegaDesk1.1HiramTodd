@@ -31,7 +31,7 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
 			this.AddNewQuote = new System.Windows.Forms.Button();
 			this.ViewQuotes = new System.Windows.Forms.Button();
-			this.SearchQuotes = new System.Windows.Forms.Button();
+			this.SearchQuotesButton = new System.Windows.Forms.Button();
 			this.ExitButton = new System.Windows.Forms.Button();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.MainMenuLabel = new System.Windows.Forms.Label();
@@ -60,16 +60,16 @@
 			this.ViewQuotes.UseVisualStyleBackColor = true;
 			this.ViewQuotes.Click += new System.EventHandler(this.ViewQuotes_Click);
 			// 
-			// SearchQuotes
+			// SearchQuotesButton
 			// 
-			this.SearchQuotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.SearchQuotes.Location = new System.Drawing.Point(40, 259);
-			this.SearchQuotes.Name = "SearchQuotes";
-			this.SearchQuotes.Size = new System.Drawing.Size(200, 50);
-			this.SearchQuotes.TabIndex = 2;
-			this.SearchQuotes.Text = "Search Quotes";
-			this.SearchQuotes.UseVisualStyleBackColor = true;
-			this.SearchQuotes.Click += new System.EventHandler(this.SearchQuotes_Click);
+			this.SearchQuotesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.SearchQuotesButton.Location = new System.Drawing.Point(40, 259);
+			this.SearchQuotesButton.Name = "SearchQuotesButton";
+			this.SearchQuotesButton.Size = new System.Drawing.Size(200, 50);
+			this.SearchQuotesButton.TabIndex = 2;
+			this.SearchQuotesButton.Text = "Search Quotes";
+			this.SearchQuotesButton.UseVisualStyleBackColor = true;
+			this.SearchQuotesButton.Click += new System.EventHandler(this.SearchQuotes_Click);
 			// 
 			// ExitButton
 			// 
@@ -111,7 +111,7 @@
 			this.Controls.Add(this.MainMenuLabel);
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.ExitButton);
-			this.Controls.Add(this.SearchQuotes);
+			this.Controls.Add(this.SearchQuotesButton);
 			this.Controls.Add(this.ViewQuotes);
 			this.Controls.Add(this.AddNewQuote);
 			this.Name = "MainMenu";
@@ -127,7 +127,7 @@
 
 		private System.Windows.Forms.Button AddNewQuote;
 		private System.Windows.Forms.Button ViewQuotes;
-		private System.Windows.Forms.Button SearchQuotes;
+		private System.Windows.Forms.Button SearchQuotesButton;
 		private System.Windows.Forms.Button ExitButton;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label MainMenuLabel;

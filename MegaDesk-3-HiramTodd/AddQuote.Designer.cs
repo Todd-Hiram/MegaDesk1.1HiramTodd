@@ -37,7 +37,7 @@
 			this.rushOrderLabel = new System.Windows.Forms.Label();
 			this.rushDateLabel = new System.Windows.Forms.Label();
 			this.drawerLabel = new System.Windows.Forms.Label();
-			this.deskComboBox = new System.Windows.Forms.ComboBox();
+			this.MaterialComboBox = new System.Windows.Forms.ComboBox();
 			this.numOfDrawers = new System.Windows.Forms.NumericUpDown();
 			this.submitButton = new System.Windows.Forms.Button();
 			this.widthLabel = new System.Windows.Forms.Label();
@@ -143,19 +143,14 @@
 			this.drawerLabel.Text = "Number of Drawers";
 			this.drawerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
-			// deskComboBox
+			// MaterialComboBox
 			// 
-			this.deskComboBox.FormattingEnabled = true;
-			this.deskComboBox.Items.AddRange(new object[] {
-            "Laminate",
-            "Oak",
-            "Rosewood",
-            "Veneer",
-            "Pine"});
-			this.deskComboBox.Location = new System.Drawing.Point(268, 109);
-			this.deskComboBox.Name = "deskComboBox";
-			this.deskComboBox.Size = new System.Drawing.Size(121, 21);
-			this.deskComboBox.TabIndex = 14;
+			this.MaterialComboBox.FormattingEnabled = true;
+			this.MaterialComboBox.Location = new System.Drawing.Point(268, 109);
+			this.MaterialComboBox.Name = "MaterialComboBox";
+			this.MaterialComboBox.Size = new System.Drawing.Size(121, 21);
+			this.MaterialComboBox.TabIndex = 14;
+			this.MaterialComboBox.SelectedIndexChanged += new System.EventHandler(this.MaterialComboBox_SelectedIndexChanged);
 			// 
 			// numOfDrawers
 			// 
@@ -316,7 +311,7 @@
 			this.Controls.Add(this.widthLabel);
 			this.Controls.Add(this.submitButton);
 			this.Controls.Add(this.numOfDrawers);
-			this.Controls.Add(this.deskComboBox);
+			this.Controls.Add(this.MaterialComboBox);
 			this.Controls.Add(this.drawerLabel);
 			this.Controls.Add(this.rushDateLabel);
 			this.Controls.Add(this.rushOrderLabel);
@@ -346,7 +341,7 @@
 		private System.Windows.Forms.Label rushOrderLabel;
 		private System.Windows.Forms.Label rushDateLabel;
 		private System.Windows.Forms.Label drawerLabel;
-		private System.Windows.Forms.ComboBox deskComboBox;
+		private System.Windows.Forms.ComboBox MaterialComboBox;
 		private System.Windows.Forms.NumericUpDown numOfDrawers;
 		private System.Windows.Forms.Button submitButton;
 		private System.Windows.Forms.Label widthLabel;

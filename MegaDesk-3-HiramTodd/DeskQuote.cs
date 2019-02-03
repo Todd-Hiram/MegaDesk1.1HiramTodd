@@ -19,59 +19,28 @@ namespace MegaDesk_3_HiramTodd
 
 		#region
 		private const int BASE_PRICE = 200;
-		private const int THRESHOLD_SIZE = 1000;
+		private const int THRESHOLD_SIZE = 1000;	// Square Inches
 		private const int THRESHOLD_RUSH = 2000;
 		private const int PER_DRAWER_PRICE = 50;
-		private const int PER_AREA_PRICE = 1;
+		private const int PER_AREA_PRICE = 1;		// Cost per squate inches over THRESHOLD_SIZE
+		private const int RUSH1 = 3;				// 3 day rush order. Less than 1000
+		private const int RUSH2 = 5;				// 5 day rush order. Less than 1000 to 2000
+		private const int RUSH3 = 7;				// 7 day rush order. Less greater than 2000
 		#endregion
 
-		public DeskQuote(string customterName, DateTime quoteDate, int width, int depth, int drawers, Desk.Material material, int rushODays)
+		public DeskQuote(string customterName, DateTime quoteDate, int width, int depth, int drawers, DesktopMaterial material, int rushODays)
 		{
 			CustomerName = customterName;
 			QuoteDate = quoteDate;
 			Desk.Width = width;
 			Desk.Depth = depth;
 			Desk.Drawers = drawers;
-			Desk.DeskMaterial = material;
+			Desk.DesktopMaterial = material;
 			RushDays = rushODays;
 
 			//Store and calculate area
 			Desk.Area = Desk.Width * Desk.Depth;
-
 		}
-
-		// Get quote for desk
-		//public int quoteCalc()
-		//{
-		//	QuoteTotal = BASE_PRICE + AreaCost() + DrawerCost() + (int)Desk.DeskMaterial + RushCost();
-		//	return QuoteTotal;
-		//}
-
-		// Get the area cost of desk
-		//private int AreaCost()
-		//{
-		//	if (Desk.Area > THRESHOLD_SIZE)
-		//	{
-		//		return (Desk.Area - THRESHOLD_RUSH) * PER_DRAWER_PRICE;
-		//	}
-		//	else
-		//	{
-		//		return 0;
-		//	}
-		//}
-
-		// Get the cost of drawers
-		//private int DrawerCost()
-		//{
-		//	int DrawerCost = Desk.Drawers * PER_AREA_PRICE;
-		//	return DrawerCost;
-		//}
-
-		//// Get cost of rush option
-		//private int RushDays()
-		//{
-		//	int rushCost = 0;
-		//}
 	}
 
 }

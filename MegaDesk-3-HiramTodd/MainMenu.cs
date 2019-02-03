@@ -30,9 +30,12 @@ namespace MegaDesk_3_HiramTodd
 
 		}
 
-		private void SearchQuotes_Click(object sender, EventArgs e)
+		private void SearchQuotes_Click (object sender, EventArgs e)
 		{
-
+			SearchQuotes SearchQuotesForm = new SearchQuotes();
+			SearchQuotesForm.Tag = this;
+			SearchQuotesForm.Show(this);
+			Hide();
 		}
 
 		private void ExitButton_Click(object sender, EventArgs e)

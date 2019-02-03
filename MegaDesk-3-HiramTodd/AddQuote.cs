@@ -1,18 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace MegaDesk_3_HiramTodd
 {
 	public partial class AddQuote : Form
 	{
+		DesktopMaterial material;
+
 		#region
 		public string CustomerName = String.Empty;
 		private int DeskWidth = 0;
@@ -20,16 +22,16 @@ namespace MegaDesk_3_HiramTodd
 		private int NumDrawers = 0;
 		private int RushDays = 0;
 		private int TotalQuote;
-		Desk.Material Materials;
+		//Desk.Material Materials;
 		#endregion
 
 		public AddQuote()
 		{
 			InitializeComponent();
-			textLabelRemoval();
 
-			List<Desk.Material> Materials = Enum.GetValues(typeof(Desk.Material)).Cast<Desk.Material>().ToList();
-			desktopMaterialComboBox.DataSource = Materials;
+			// use List<> to populate combobox
+			List<DesktopMaterial> MaterialList = Enum.GetValues(typeof(DesktopMaterial)).Cast<DesktopMaterial>().ToList();
+			MaterialComboBox.DataSource = MaterialList;
 		}
 
 		private void AddQuote_Load(object sender, EventArgs e)
@@ -104,6 +106,18 @@ namespace MegaDesk_3_HiramTodd
 		private void radioButtonYes_CheckedChanged(object sender, EventArgs e)
 		{
 
+		}
+
+		private void MaterialComboBox_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			try
+			{
+				material = (DesktopMaterial)MaterialComboBox.SelectedValue;
+			}
+			catch (Exception)
+			{
+				throw;
+			}
 		}
 	}
 }

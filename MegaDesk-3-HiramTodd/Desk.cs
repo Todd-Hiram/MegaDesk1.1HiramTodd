@@ -8,9 +8,6 @@ namespace MegaDesk_3_HiramTodd
 {
 	class Desk
 	{
-		// Desk surface materials
-		public enum Material { Laminate = 100, Oak = 200, Rosewood = 300, Veneer = 125, Pine = 50 }
-
 		// Desk Constraints
 		public const int MINWIDTH = 24;
 		public const int MAXWIDTH = 96;
@@ -19,7 +16,7 @@ namespace MegaDesk_3_HiramTodd
 
 		#region
 		// Desk Description and dimensions
-		public Material DeskMaterial { get; set; }
+		public DesktopMaterial DesktopMaterial { get; set; }
 		public int Width { get; set; }
 		public int Depth { get; set; }
 		public int Drawers { get; set; }
@@ -27,11 +24,13 @@ namespace MegaDesk_3_HiramTodd
 		#endregion
 	}
 
-	//public int SurfaceArea
-	//{
-	//	get
-	//	{
-	//		return this.Width * this.Depth;
-	//	}
-	//}
+	// Desk surface materials
+	public enum DesktopMaterial
+	{
+		Laminate = 100,
+		Oak = 200,
+		Rosewood = 300,
+		Veneer = 125,
+		Pine = 50
+	}
 }
